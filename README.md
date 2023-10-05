@@ -60,7 +60,7 @@ print('Difference:')
 print(((out2 - out1) ** 2).sum())
 ```
 
-### 5. Main Results
+### 4. Main Results
 ![fig1](figures/table1.jpg)
 
 ## Citation
