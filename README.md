@@ -6,7 +6,7 @@ Grouped Connections For Visual Adaptation (ICLR-2023)</h1>
 </div>
 
 Official implementation for ICLR 2023 paper [Consolidator: Mergeable Adapter with
-Grouped Connections For Visual Adaptation](https://arxiv.org/abs/2305.00603)
+Grouped Connections for Visual Adaptation](https://arxiv.org/abs/2305.00603)
 
 ## TL;DR
 
@@ -19,6 +19,7 @@ Such paradigm can reach better performance using quite few parameters, and bring
 conda create -n consolidator python=3.8
 conda activate consolidator
 pip install torch==1.8.0+cu111 torchvision==0.9.0+cu111 torchaudio==0.8.0 -f https://download.pytorch.org/whl/torch_stable.html
+pip install mmcv==1.3.11 -f https://download.openmmlab.com/mmcv/dist/cu111/torch1.8/index.html
 pip install -r requirements.txt
 ```
 
