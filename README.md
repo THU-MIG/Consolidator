@@ -37,9 +37,23 @@ python get_vtab1k.py
 Download [ViT-B](https://storage.googleapis.com/vit_models/imagenet21k/ViT-B_16.npz) and [MoCo v3 ViT-B](https://dl.fbaipublicfiles.com/moco-v3/vit-b-300ep/vit-b-300ep.pth.tar) to ```ckpts/```.
 
 
-### 2. Training
+### 2. Training & Evaluation
+For in21k_vit-b:
 ```
+# training
 bash configs/Consolidator/VTAB/train_consolidator_vtab.sh
+
+# collecting results
+python collect_res.py --logs-path saves/vit-b
+```
+
+For mocov3_vit-b:
+```
+# training
+bash configs/Consolidator/VTAB/mocov3_train_consolidator_vtab.sh
+
+# collecting results
+python collect_res.py --logs-path saves/mocov3_vit-b
 ```
 
 ### 3. Converting
